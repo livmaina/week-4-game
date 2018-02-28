@@ -1,0 +1,16 @@
+body {
+	background: url("../images/dark_embroidery.png");
+}
+
+.scoreDiv {
+	background-color: lightblue;
+}
+
+.randomNumberDiv {
+	background-color: lightseagreen;
+}
+
+.winsLoseDiv {
+	background-color: lightsalmon;
+}
+
