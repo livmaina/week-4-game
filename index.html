@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Crystal Collector Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class= "container">
+
+        <div class= "jumbotron">
+
+        <h1>Crystal Collector Game!</h1>
+
+    <p> You will be given a random number at the start of the game</p>
+    <br><br>
+    <p> There are four crystals below.  By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+    <br><br>
+    <p> You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+    <br><br>
+    <p>The value of each crystal is hidden from you until you click on it.</p>
+    <br><br>
+    <p> Each time when the game starts, the game will change the values of each crystal.</p>
+
+    </div>
+
+    <div class="row">
+            <div class="col-md-6 randomNumberDiv">
+            <h2 id="randomNumber">RandomNumber</h2>
+            
+        </div>
+            
+            <div class="col-md-6 scoreDiv">
+            
+                <p id="wins">Wins: </p>
+            
+                <p id="losses">losses: </p>
+            </div>
+                
+    </div>
+
+    <div class="row">
+			<div class="col-md-1 col-md-offset-1 gem" value="gem1">
+				<img src="/assets/images/ruby.png" class="img-responsive" alt="Gem1">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem2">
+				<img src="/assets/images/purple.png" class="img-responsive" alt="Gem2">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem3">
+				<img src="/assets/images/pink.png" class="img-responsive" alt="Gem3">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem4">
+				<img src="/assets/images/yellow.png" class="img-responsive" alt="Gem4">
+			</div>
+		</div>
+
+
+
+
+</div>
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<!-- Script -->
+<script type="text/javascript" src="game.js"> </script>
+</body>
+</html>
