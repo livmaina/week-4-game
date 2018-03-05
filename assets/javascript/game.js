@@ -23,14 +23,14 @@ $(document).ready(function() {
 
     function WinOrLoss() {
 		// if player loses
-		if (userTallyScore > randomComputerNumber) {
+		if (userScore > randomComputerNumber) {
 			losses++;
 			console.log("user lost");
 			initializeVariables();
 		}
 
 		// if player wins
-		if (userTallyScore == randomComputerNumber) {
+		if (userScore == randomComputerNumber) {
 			wins++;
 			console.log("user won");
 			initializeVariables();
@@ -40,19 +40,21 @@ $(document).ready(function() {
     initializeVariables();
 
     $(".crystal").on("click", function (){
-
-        if (pressed == "ruby"){
+        var pressed = $(this).attr("value");
+        if (pressed === "ruby"){
             userScore += rubyVal;
         }
-        else if (pressed=="purple"){
+        else if (pressed==="purple"){
             userScore += purpleVal;
         }
-        else if (pressed="pink"){
+        else if (pressed==="pink"){
             userScore += pinkVal;
         }
-        else if (pressed="yellow"){
+        else if (pressed==="yellow"){
             userScore += yellowVal;
         }
+        console.log(userScore);
+        $("#playerScore").html(userScore);
 
         WinOrLoss();
     });
